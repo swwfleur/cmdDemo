@@ -7,52 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+    <div class="sidebar p-32 d-flex flex-column justify-content-between">
+      <div class="sidebar-top">
+        <h1 class="logo mb-32">
+        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg" alt="logo">
+        </h1>
+        <ul clas="nav">           
+            <li class="mb-26"><a href="#"><i class="material-icons mr-16">
+              analytics
+            </i>Dashboard</a></li>
+            <li class="mb-26"><a href="#"><i class="material-icons mr-16">
+              question_answer
+            </i>Question</a></li>
+            <li class="mb-26"><a href="#"><i class="material-icons mr-16">
+              assignment
+            </i>Assignment</a></li>
+            <li class="mb-26"><a href="#"><i class="material-icons mr-16">
+              video_library
+            </i>Course</a></li>
+            <li class="mb-26"><a href="#"><i class="material-icons mr-16">
+              people_alt
+            </i>Admin</a></li>
+            <li class="mb26"><a href="#"><i class="material-icons mr-16">
+              settings
+            </i>Settings</a></li>
+        </ul>
       </div>
-    </nav>
+      <div class="user d-flex align-items-center">
+            <div class="pic mr-16">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="userPhoto" class="circle" style="width: 40px;height: 40px;">
+            </div>
+          <div class="user-info mt-auto p-2 bd-highlight">
+            <p>Andy Chen</p>
+            <p class="user-text">andy0401@mail.com</p>
+          </div>
+      </div>
+</div>
+
+
+
+
+        
+    </div>
+      
 
     <%- contents %>
-
-    <footer class="footer">
-      footer
-    </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

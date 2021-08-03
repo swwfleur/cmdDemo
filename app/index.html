@@ -5,54 +5,140 @@ engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<div class="main p-32">
+  <div class="link d-flex justify-content-between mb-44">
+    <div class="link-left">
+      <a href="#" class="link-title mr-48">Assignment</a>
+      <a href="#">All Courses</a>
+      <a href="#"><i class="fas fa-chevron-down green"></i></a>
+    </div>     
+    <div class="link-right">
+      <a href="#"><i class="fas fa-search mr-26"></i></a>
+      <a href="#"><i class="fas fa-bell"></i></a>
+    </div>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+  <div class="row">
+    <div class="task col-5">
+      <div class="d-flex">
+        <p class="mr-8 fw-bold">All (4)</p>
+        <a href="#"><i class="fas fa-chevron-down green"></i></a>
+      </div>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <div class="task-title d-flex w-100 justify-content-between align-items-center">
+            <p class="mb-1">Chapter Assignment 2</p>
+            <small>4 hrs ago</small>
+          </div>
+          <div class="tast-content d-flex w-100 justify-content-between">
+            <p>Please check this file…</p>
+            <small>Emily Wang</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+          <div class="task-title d-flex w-100 justify-content-between align-items-center">
+            <p class="mb-1">Chapter Assignment 1</p>
+            <small>12 hrs ago</small>
+          </div>
+          <div class="tast-content d-flex w-100 justify-content-between">
+            <p>My Homework</p>
+            <small>David Xu</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+          <div class="task-title d-flex w-100 justify-content-between align-items-center">
+            <p class="mb-1">Final Assignment</p>
+            <small>18 hrs ago</small>
+          </div>
+          <div class="tast-content d-flex w-100 justify-content-between">
+            <p>Have a problem with this…</p>
+            <small>Tony Wei</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+          <div class="task-title d-flex w-100 justify-content-between align-items-center">
+            <p class="mb-1">Final Assignment</p>
+            <small>19 hrs ago</small>
+          </div>
+          <div class="tast-content d-flex w-100 justify-content-between">
+            <p>Did I do it right?</p>
+            <small>Christina Lin</small>
+          </div>
+        </a>
+      
+        
+      </div>
+    </div>
+    <div class="work col-7">
+      <p class="text-end work-number">2 comments</p>
+      <div class="card mb-16">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <div class="card-header-group">
+            <p class="card-header-title">Chapter Assignment 2 / HTML&CSS</p>
+            <p class="card-header-subtitle">Please check this file for me, thanks!</p>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true" alt="userPhoto" class="circle" style="width: 40px;height: 40px;">
+            </div>
+            <div class="card-content flex-grow-1 ms-3">
+              <div class="card-title">
+                <h5>Emily Wang</h5>
+                <small>10:38 AM (4 hours ago)</small>
+              </div>
+              <p class="card-text">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span>div</span> is bigger than the height of the <span>img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+          <a href="#" class="btn btn-primary"><i class="material-icons">
+            attach_file
+          </i>HW-2-David.zip</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="userPhoto" class="circle" style="width: 40px;height: 40px;">
+            </div>
+            <div class="card-content flex-grow-1 ms-3">
+              <div class="card-title">
+                <h5>Andy Chen (You)</h5>
+                <small>13:24 AM (1 hours ago)</small>
+              </div>
+              <p class="card-text">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+              <p>You can:</p>
+              <ul>
+                <li>adjust the <span>vertical-align</span> of the image to position it elsewhere (e.g. the <span>middle</span> ) or</li>
+                <li>change the <span>display</span> so it isn’t inline.</li>
+              </ul>
+          <a href="#" class="btn btn-primary"><i class="material-icons">
+            attach_file
+          </i>HW-2-David.zip</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer d-flex justify-content-between">
+        <div class="pagination">
+          <a href="#"><i class="material-icons mr-26">
+            chevron_left
+            </i></a>
+          <a href="#"><i class="material-icons">
+            chevron_right
+            </i></a>
+        </div>
+        <div class="button-group">
+        <button type="button" class="btn btn-outline-success mr-16">Mark as read</button>
+        <button type="button" class="btn btn-success">Reply</button>
+      </div>
+      
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
   </div>
 </div>
