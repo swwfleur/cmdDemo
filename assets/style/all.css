@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11563,10 +11564,172 @@ fieldset:disabled .btn {
   }
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+a {
+  font-weight: 900;
+  text-decoration: none;
+  color: #212529;
+}
+
+ul {
+  list-style: none;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-26 {
+  margin-bottom: 26px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-44 {
+  margin-bottom: 44px;
+}
+
+.mr-8 {
+  margin-right: 9px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-26 {
+  margin-right: 26px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.green {
+  color: #198754;
+}
+
+span {
+  color: #198754;
+  background: #F8F9FA;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+}
+
+.p-32 {
+  padding: 32px;
+}
+
+.sidebar {
+  float: left;
+  max-width: 296px;
+  background: #F8F9FA;
+  height: 100vh;
+}
+
+.sidebar .sidebar-top ul {
+  padding-left: 0;
+}
+
+.sidebar .user .user-text {
+  font-size: 14px;
+  color: #6C757D;
+}
+
+.main {
+  float: left;
+  max-width: 984px;
+  margin: auto;
+}
+
+.main .link .link-title {
+  font-size: 24px;
+}
+
+.main .list-group .active {
+  background: #F8F9FA;
+  color: #212529;
+  border: 1px solid #CED4DA;
+}
+
+.button-group {
+  text-align: right;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.card-header-group {
+  line-height: 0;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 17px;
+}
+
+.card-header-group .card-header-title {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.card-header-group .card-header-subtitle {
+  line-height: 19px;
+}
+
+.card-content {
+  margin-bottom: 16px;
+}
+
+.card-content .card-title h5, .card-content .card-title .h5 {
+  margin-bottom: 4px;
+}
+
+.card-content .card-title small, .card-content .card-title .small {
+  font-size: 12px;
+  color: #6C757D;
+}
+
+.card-content .card-text {
+  font-size: 14px;
+}
+
+.card-content ul {
+  list-style: inside;
+}
+
+.card-content .btn-primary {
+  width: 176px;
+  background: #F8F9FA;
+  border: 1px solid #CED4DA;
+}
+
+.work-number {
+  font-size: 12px;
+  color: #6C757D;
+}
+
+.task-title {
+  font-size: 12px;
+}
+
+.task-title p {
+  margin-top: 12px;
+}
+
+.tast-content {
+  font-weight: 900;
+}
+
+.tast-content small, .tast-content .small {
+  font-size: 12px;
+  color: #6C757D;
 }
 
 /*# sourceMappingURL=all.css.map */
